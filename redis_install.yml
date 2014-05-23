@@ -12,3 +12,5 @@
       with_items:
         - redis-server
 
+  handlers:
+    - include: handlers/redis.yml
