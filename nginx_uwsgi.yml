@@ -1,0 +1,12 @@
+---
+
+- hosts: webservers
+  user: ubuntu
+  sudo: True
+
+  tasks:
+    - include: tasks/nginx.yml
+    - include: tasks/nginx_uwsgi.yml
+
+  handlers:
+    - include: handlers/nginx.yml

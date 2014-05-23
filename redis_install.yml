@@ -11,7 +11,4 @@
       action: apt pkg=$item state=installed
       with_items:
         - redis-server
-        - 
 
-  handler:
-    - name:
